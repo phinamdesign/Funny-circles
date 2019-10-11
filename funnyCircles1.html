@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bán kính cố định</title>
+</head>
+<body>
+<canvas id="canvas" width="1368" height="768" style="border: 1px solid red"></canvas>
+</body>
+<script>
+    function Circle(x,y,radius) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+    }
+    function createCircle() {
+        var ctx = document.getElementById("canvas").getContext("2d");
+        var circle = new Circle(500,500,radius);
+        ctx.beginPath();;
+        ctx.arc(circle.x,circle.y,circle.radius,0,2*Math.PI);
+        ctx.fill();
+    }
+    createCircle();
+</script>
+</html>
